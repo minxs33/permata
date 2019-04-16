@@ -17,7 +17,6 @@
                             <p>{{ Session()->get('danger') }}Permintaan sedang di proses</p>
                     </div>
                     @endif
-
                 </div>
             </div>
         </div>
