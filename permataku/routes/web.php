@@ -24,5 +24,5 @@ Route::group(['prefix' => 'agen'], function() {
     Route::get('/daftaragen','HomeController@daftaragen');
     Route::post('/insert','AgenController@insert');
     Route::get('/daftarsukses','HomeController@daftarsukses');
-
+    Route::get('/dashboard','AgenController@dashboard');
 });

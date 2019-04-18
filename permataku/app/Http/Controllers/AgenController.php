@@ -10,6 +10,13 @@ use DB;
 
 class AgenController extends Controller
 {
+    public function dashboard()
+    { 
+        $agen = Agen::where('id_agen',Auth()->user()->id_user)->first();
+        return view('agen/dashboard/beranda',[
+            'agen' => $agen
+        ]);
+    }
     public function insert(request $request)
     {
         $this->validate($request, [

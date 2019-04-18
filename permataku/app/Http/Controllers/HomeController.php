@@ -38,7 +38,7 @@ class HomeController extends Controller
     }
     public function daftarsukses()
     {
-        $agen = Agen::where('id_user',Auth()->user()->id_user)->first();
+        $agen = Agen::where('id_user',Auth()->user()->id)->first();
         return view('agen/daftarsukses',[
             'agen' => $agen
         ]);
