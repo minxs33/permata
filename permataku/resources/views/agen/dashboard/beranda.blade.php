@@ -4,10 +4,9 @@
  <div class="row page-titles"
                 style="background:url(/agen/assets/images/background/user-bg.jpg) no-repeat center top;">
                 <div class="col-lg-12 text-center">
-                    <h1 class="m-t-30">Fahmi</h1>
-                    <h5 class=""><i class="ti-pin"></i> Jalan Duku5, Depok, Jawa Barat</h5>
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star"></i>
+                    <h1 class="m-t-30">{{$agen->nama_lengkap}}</h1>
+                    <h5 class=""><i class="fa fa-map-marker"></i> {{$agen->alamat}}</h5>
+                    
                 </div>
             </div>
             <!-- Row -->
@@ -36,7 +35,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 p-t-10 p-b-20 align-self-center">
-                                        <h2 class="font-light text-white">312 Customer</h2>
+                                        <h2 class="font-light text-white">{{$agen->total_transaksi}} Customer</h2>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +77,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 p-t-10 p-b-20 align-self-center">
-                                        <h2 class="font-light text-white">Rp. 1.500.000</h2>
+                                        <h2 class="font-light text-white">Rp. {{$agen->saldo_rekening}}</h2>
 
                                     </div>
                                 </div>
@@ -100,7 +99,7 @@
                             <div class="card-body">
                                 <form action="#">
                                     <div class="form-body">
-                                        <h3 class="card-title">Pesan</h3>
+                                        <h3 class="card-title">Buat Postingan</h3>
                                         <div class="form-group">
                                             <div class="controls">
                                                 <textarea name="textarea" id="textarea" class="form-control" required
@@ -133,9 +132,9 @@
                                                                 </div>
                                                             </div>
                                                             <div class="like-comm m-t-20"> <a href="javascript:void(0)"
-                                                                    class="link m-r-10">5 comment</a> <a
+                                                                    class="link m-r-10"><i class="fa fa-comment"></i> 5</a> <a
                                                                     href="javascript:void(0)" class="link m-r-10"><i
-                                                                        class="fa fa-heart text-danger"></i> 19 Love</a>
+                                                                        class="fa fa-heart text-danger"></i> 19</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -154,9 +153,9 @@
                                                                 mauris. Fusce nec tellus sed augue semper </p>
                                                         </div>
                                                         <div class="like-comm m-t-20"> <a href="javascript:void(0)"
-                                                                class="link m-r-10">8 comment</a> <a
+                                                                class="link m-r-10"><i class="fa fa-comment"></i> 8</a> <a
                                                                 href="javascript:void(0)" class="link m-r-10"><i
-                                                                    class="fa fa-heart text-danger"></i> 24 Love</a>
+                                                                    class="fa fa-heart text-danger"></i> 24</a>
                                                         </div>
                                                     </div>
                                                 </div>
