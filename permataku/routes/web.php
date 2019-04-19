@@ -21,10 +21,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'agen'], function() {
 
+    // Daftar
     Route::get('/daftaragen','HomeController@daftaragen');
     Route::post('/insert','AgenController@insert');
     Route::get('/daftarsukses','HomeController@daftarsukses');
+    // Dashboard
     Route::get('/dashboard','AgenController@dashboard')->middleware('agen');
+    Route::get('/transaksi','AgenController@transaksiPage')->middleware('agen');
 });
 Route::group(['prefix' => 'admin'], function(){
     Route::get('/dashboard','AdminController@dashboard')->middleware('admin');

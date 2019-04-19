@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Agen;
+use App\Pelanggan;
 use Auth;
 use DB;
 
@@ -64,5 +65,14 @@ class AgenController extends Controller
         $insert1->save();
         return redirect('agen/daftarsukses')->with(['success'=>'Permintaan kamu sedang di proses']);
         }
+    }
+    public function transaksiPage()
+    {
+        $pelanggan = Pelanggan::where('id_agen',Auth()->user()->id_agen);
+        $agen = Agen::where('id_agen',Auth()->user()->id_user)->first();
+        return view('agen/dashboard/transaksi',[
+            'pelanggan' => $pelanggan,
+            'agen' => $agen,
+        ]);
     }
 }

@@ -17,4 +17,8 @@ class Agen extends Model
     {
         return $this->belongsTo('App\Agen');
     }
+    public function Pelanggan()
+    {
+        return $this->hasMany('App\Agen');
+    }
 }
