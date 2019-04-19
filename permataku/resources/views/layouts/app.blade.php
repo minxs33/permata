@@ -1,80 +1,164 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 <head>
+    <!-- Meta-Information -->
+    <title>Permata</title>
+
+    <link rel="images/logo/logo.png" rel="icon" />
     <meta charset="utf-8">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- Vendor: Bootstrap 4 Stylesheets  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" href="css/icons.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="stylesheet" href="css/backtop.css">
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Revolution Style -->
+    <link rel="stylesheet" href="css/revolution/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/revolution/settings.css">
+    <link rel="stylesheet" href="css/revolution/layers.css">
+    <link rel="stylesheet" href="css/revolution/navigation.css">
 </head>
+
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <!-- Our Website Content Goes Here -->
+    <main>
+        <header class="stck">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="mnu-sc">
+                    <div class="logo">
+                        <h1><a href="#" title=""><img src="images/logo.png" alt="" itemprop="image"
+                                    style="margin-left: 4rem;"></a>
+                        </h1>
+                    </div>
+                    <nav class="one-page-func">
+                        <ul>
+                            <li><a href="#home" title="">Home</a></li>
+                            <li><a href="#" title="">Services</a></li>
+                            <li><a href="#" title="">Event</a></li>
+                            <li><a href="#" title="">Statik</a></li>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </nav>
+        </header><!-- Header -->
+        <div class="rpnsv-hdr">
+            <div class="rspnsv-lg-br">
+                <div class="logo">
+                    <h1><a href="index6.html" title=""><img src="images/logo.png" alt=""></a></h1>
+                </div>
+                <span class="mnu-btn brd-rd5"><i class="fa fa-align-justify"></i></span>
+            </div>
+            <div class="rspnsv-mnu blue-bg">
+                <span class="cls-btn"><i class="fa fa-close"></i></span>
+                <ul>
+                    <li><a href="#home" title="">Home</a></li>
+                    <li><a href="#services" title="">Services</a></li>
+                    <li><a href="#about" title="">Event</a></li>
+                    <li><a href="#team" title="">Statik</a></li>
+                </ul>
+            </div>
+        </div><!-- Responsive Header -->
+        @yield('content')
+        
+        <footer>
+            <div class="gp tp315">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <div class="ftr-wrp text-center">
+                                <div class="ftr-innr">
+                                    <h1>X<span>APO</span></h1>
+                                    <p>People who succeed have momentum. The more they succeed, the more they want to
+                                        succeed, Lorimes somijes ilimes uilme silmes and the more they find a way to
+                                        succeed.</p>
+                                    <span><i class="blue-clr">Copyright &copy; 2018 <a
+                                                href="https://themeforest.net/user/websroad/portfolio?ref=websroad"
+                                                title="Websroad" target="_blank">Websroad</a></i> | All Rights
+                                        Reserved</span>
+                                    <div class="ft-scl">
+                                        <a class="facebook scl-btn brd-rd50" href="#" title="" target="_blank"><i
+                                                class="fa fa-facebook"></i></a>
+                                        <a class="twitter scl-btn brd-rd50" href="#" title="" target="_blank"><i
+                                                class="fa fa-twitter"></i></a>
+                                        <a class="google scl-btn brd-rd50" href="#" title="" target="_blank"><i
+                                                class="fa fa-google-plus"></i></a>
+                                        <a class="vimeo scl-btn brd-rd50" href="#" title="" target="_blank"><i
+                                                class="fa fa-vimeo"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+    </main>
+
+    <!-- Vendor: Javascripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Our Website Javascripts -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/scroll-up-bar.min.js"></script>
+    <script src="js/jquery.poptrox.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4XGd9qpQIEkbfL6QpR6qk2jQ9S9_5Uww"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Revolution JS Files -->
+    <script src="js/revolution/jquery.themepunch.tools.min.js"></script>
+    <script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Revolution Addons -->
+    <script src="js/revolution/addons/revolution.addon.slicey.min.js"></script>
+
+    <!-- Slider Revolution 5.0 Extensions -->
+    <script src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/revolution/extensions/revolution.extension.video.min.js"></script>
+    <script src="js/revolution/revolution.initialize3.js"></script>
+
+    <script>
+        /*Scroll to top when arrow up clicked BEGIN*/
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+        });
+        $(document).ready(function () {
+            $("#back2Top").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+
+        });
+ /*Scroll to top when arrow up clicked END*/
+
+    </script>
+
 </body>
+
 </html>
