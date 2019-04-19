@@ -636,7 +636,7 @@
                         </div>
                         <div class="col-md-7 col-sm-12 col-lg-7">
                             <div class="amz-tl">
-                                <h2>Permasalahn <i class="blue-clr">Anda</i></h2>
+                                <h2>Permasalahan <i class="blue-clr">Anda</i></h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros
                                     eget elit Donec nec eros eget adipiscing Ulimes gue ut eget…</p>
                             </div>

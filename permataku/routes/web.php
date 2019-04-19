@@ -10,12 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('home');
 });
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -25,4 +25,7 @@ Route::group(['prefix' => 'agen'], function() {
     Route::post('/insert','AgenController@insert');
     Route::get('/daftarsukses','HomeController@daftarsukses');
     Route::get('/dashboard','AgenController@dashboard');
+});
+Route::group(['prefix' => 'admin'], function(){
+    Route::get('/dashboard','AdminController@dashboard')->middleware('admin');
 });
