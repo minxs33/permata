@@ -692,9 +692,9 @@
     </div>
 </div>
 </section>
-
 <section id="">
 <div class="container">
+@guest
     <div class="col-md-12 col-sm-12 col-lg-12">
         <div class="sec-tl-wrp text-center" style="top: 30%;">
 
@@ -706,6 +706,10 @@
                 <i class="fa fa-angle-right brd-rd50"></i></a></div>
     </div>
 </div>
+@else
+    <h1> section untuk punya akun </h1>
+    </div>
+@endguest
 </section>
 
 <section id="">
