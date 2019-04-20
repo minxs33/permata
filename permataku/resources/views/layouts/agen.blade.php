@@ -466,12 +466,12 @@
                         <li class="nav-devider"></li>
                         <li class="nav-small-cap">PERSONAL</li>
                         <li class="active"> 
-                            <a  href="#" aria-expanded="false">
+                            <a  href="{{url('agen/dashboard')}}" aria-expanded="false">
                             <i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard </span></a>
                         </li>
 
                         <li> 
-                            <a  href="#" aria-expanded="false">
+                            <a  href="{{url('agen/transaksi')}}" aria-expanded="false">
                             <i class="fa fa-handshake-o"></i><span class="hide-menu">Total Transaksi </span></a>
                         </li>
                 </ul>

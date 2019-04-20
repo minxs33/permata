@@ -138,15 +138,7 @@
                                                 <input type="text" class="form-control" id="exampleInputuname" placeholder="Masukan nama pelanggan">
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="checkbox checkbox-success">
-                                                <input id="checkbox1" type="checkbox">
-                                                <label for="checkbox1"> Remember me </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
-                                        <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
-                                    </form>
+                                        </form>
                                 </div>
                             </div>
                         </div>

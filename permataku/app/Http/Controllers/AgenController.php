@@ -72,6 +72,8 @@ class AgenController extends Controller
             }
         $insert1->no_rekening = $request->no_rekening;
         $insert1->pin_rekening = $request->pin_rekening;
+        $insert1->saldo_rekening = 1000000;
+        $insert1->total_transaksi = 0;
         $insert1->save();
         return redirect('/home')->with(['success'=>'Permintaan kamu sedang di proses']);
         }

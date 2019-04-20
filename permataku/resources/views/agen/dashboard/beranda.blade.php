@@ -56,7 +56,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 p-t-10 p-b-20 align-self-center">
-                                        <h2 class="font-light text-white"> 1941 Point</h2>
+                                        <h2 class="font-light text-white"> 0 Point</h2>
                                     </div>
                                 </div>
                             </div>
