@@ -29,6 +29,7 @@ Route::group(['prefix' => 'agen'], function() {
     Route::get('/dashboard','AgenController@dashboard')->middleware('agen');
     Route::get('/transaksi','AgenController@transaksiPage')->middleware('agen');
     Route::get('/getID','AgenController@getID');
+    Route::post('/insertPelanggan','AgenController@insertPelanggan');
 
 });
 Route::group(['prefix' => 'admin'], function(){

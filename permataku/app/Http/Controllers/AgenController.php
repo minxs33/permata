@@ -90,4 +90,19 @@ class AgenController extends Controller
         $pelanggan = Pelanggan::find($id)->first();
         return $pelanggan;
     }
+    public function insertPelanggan(request $request)
+    {
+        $insert = new Pelanggan;
+        $insert1 = new Agen;
+
+        $insert->id_agen = Auth()->user()->id_user;
+        $insert->nama_lengkap = $request->nama_lengkap;
+        $insert->jenis_kelamin = $request->jenis_kelamin;
+        $insert->ttl = $request->ttl;
+        $insert->alamat = $request->alamat;
+        $insert->jumlah_transaksi = 0;
+        $insert->save();
+
+        return redirect('agen/transaksi');
+    }
 }

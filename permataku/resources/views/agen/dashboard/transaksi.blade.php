@@ -30,20 +30,30 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                    <form>
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput">Example label</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                    <div class="card-body">
+                    <form method="POST" action="{{ url('agen/insertPelanggan') }}" enctype="multipart/form-data">
+                        @csrf
+
+                        <div class="form-group">
+                                            <label for="exampleFormControlFile1">Nama Lengkap</label>
+                                            <input class="form-control" type="text" name="nama_lengkap">
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="exampleFormControlFile1">Jenis Kelamin</label>    
+                                            <input class="form-control" type="text" name="jenis_kelamin">
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="exampleFormControlFile1">Tempat Tanggal Lahir</label>
+                                            <input class="form-control" type="text" name="ttl">
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="exampleFormControlFile1">Alamat</label>
+                                            <textarea class="form-control-file" type="text" name="alamat"></textarea>
+                                            </div>
+                                            <button class="btn btn-primary col-md-6 float-right shadow mb-5 rounded" type="submit">Daftar</button>
+                                            <button class="btn btn-danger col-md-6 float-left shadow mb-5 rounded" data-dismiss="modal">Kembali</button>
+                                        </form>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="formGroupExampleInput2">Another label</label>
-                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                                    </div>
-                                    </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
                                     </div>
                                     </div>
                                 </div>
