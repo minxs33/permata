@@ -40,7 +40,7 @@ class AgenController extends Controller
         if($insert->status == 'user')
         {
             $insert->id_user = Auth::user()->id_user;
-            $insert->status = 'menunggu';
+            $insert->status = 'agen';
             $insert->save();
         
             $insert1->id_user = Auth::user()->id_user;
@@ -73,7 +73,7 @@ class AgenController extends Controller
         $insert1->no_rekening = $request->no_rekening;
         $insert1->pin_rekening = $request->pin_rekening;
         $insert1->save();
-        return redirect('/daftarsukses')->with(['success'=>'Permintaan kamu sedang di proses']);
+        return redirect('/home')->with(['success'=>'Permintaan kamu sedang di proses']);
         }
     }
     public function transaksiPage()

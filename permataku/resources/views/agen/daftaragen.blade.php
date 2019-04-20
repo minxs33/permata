@@ -7,7 +7,7 @@
                 <div class="card-header">{{ __('Daftar Agen') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{url('agen/insert')}}" enctype="multipart/form-data">
+                    <form method="POST" action="{{url('/insert')}}" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group row">

@@ -21,11 +21,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/daftaragen','HomeController@daftaragen');
 Route::get('/daftarsukses','HomeController@daftarsukses');
+Route::post('/insert','AgenController@insert');
 Route::group(['prefix' => 'agen'], function() {
 
     // Daftar
-    Route::post('/insert','AgenController@insert');
     // Dashboard
+    Route::get('/', function(){
+        return view('agen/dashboard');
+    });
     Route::get('/dashboard','AgenController@dashboard')->middleware('agen');
     Route::get('/transaksi','AgenController@transaksiPage')->middleware('agen');
     Route::get('/getID','AgenController@getID');
