@@ -73,8 +73,8 @@
                                                 <div class="label label-table label-success">{{$pelanggan->jumlah_transaksi}}</div>
                                             </td>
                                             <td class="text-nowrap">
-                                                <button href="#" id="getID" value="{{$pelanggan->id_pelanggan}}"
-                                                data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </button>
+                                                <a href="#" id="getID" value="{{$pelanggan->id_pelanggan}}"
+                                                data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
                                                 <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
                                             </td>
                                         </tr>
@@ -318,7 +318,7 @@
                     console.log(data);
                 }
             });
-            
+
         });
     });
 </script>
