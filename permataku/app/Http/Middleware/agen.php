@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Middleware;
-
+use Alert;
 use Closure;
 
 class agen
@@ -18,7 +18,8 @@ class agen
         if(auth()->user()->status == 'agen'){
             return $next($request);
         }else{
-        return redirect('/home')->with('error','Kamu belum menjadi agen');
+        Alert::error('Anda belum terdaftar sebagai agen','Error!');
+        return redirect('/home');
       }
        return redirect('/home');
     }

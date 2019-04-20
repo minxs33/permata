@@ -4,6 +4,8 @@
     <!-- Meta-Information -->
     <title>Permata</title>
 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <link rel="images/logo/logo.png" rel="icon" />
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -51,6 +53,9 @@
                                 <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
                                 @endif
                             @else
+                                @if(Auth()->user()->status == 'agen')
+                                <li><a href="{{ url('agen/dashboard') }}">{{_('Dashboard')}}</a></li>
+                                @endif
                             <li>
                                 <a id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
