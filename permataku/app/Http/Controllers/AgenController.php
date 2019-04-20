@@ -85,7 +85,7 @@ class AgenController extends Controller
             'agen' => $agen,
         ]);
     }
-    public function getID($id)
+    public function getID()
     {
         $pelanggan = Pelanggan::find($id)->first();
         return $pelanggan;

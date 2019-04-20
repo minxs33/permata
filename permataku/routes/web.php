@@ -28,7 +28,7 @@ Route::group(['prefix' => 'agen'], function() {
     // Dashboard
     Route::get('/dashboard','AgenController@dashboard')->middleware('agen');
     Route::get('/transaksi','AgenController@transaksiPage')->middleware('agen');
-    Route::get('/getID{$id}','AgenController@getID');
+    Route::get('/getID','AgenController@getID');
 
 });
 Route::group(['prefix' => 'admin'], function(){
