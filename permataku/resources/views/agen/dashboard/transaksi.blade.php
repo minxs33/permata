@@ -68,7 +68,8 @@
                                                 <div class="label label-table label-success">{{$pelanggan->jumlah_transaksi}}</div>
                                             </td>
                                             <td class="text-nowrap">
-                                                <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                <button href="#" id="getID" value="{{$pelanggan->id_pelanggan}}"
+                                                data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </button>
                                                 <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
                                             </td>
                                         </tr>
@@ -289,4 +290,29 @@
 
 
             </div>
+<script>
+     $(document).ready(function(){
+        $('#getID').click(function(e){
+
+            var id = $(this).val;
+
+            e.preventDefault();
+            
+            $.ajaxSetup({
+                  headers: {
+                      'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                  }
+              });
+
+            $.ajax({
+                url: "{{ url('/agen/getID') }}",
+                method: "POST",
+                data: {id:id},
+                success: function(data){
+                    console.log(data);
+                }
+            });
+        });
+    });
+</script>
 @endsection

@@ -88,5 +88,6 @@ class AgenController extends Controller
     public function getID($id)
     {
         $pelanggan = Pelanggan::find($id)->first();
+        return $pelanggan;
     }
 }
