@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Admin Press Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="../images/fav-icon/permata.png">
+    <title>Permataku</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- morris CSS -->
@@ -165,7 +165,7 @@
                                         <div class="message-center">
                                             <!-- Message -->
                                             <a href="#">
-                                                <div class="user-img"> <img src="assets/images/users/1.jpg"
+                                                <div class="user-img"> <img src="{{URL::asset('fotoDiri/'.$agen->foto_diri) }}"
                                                         alt="user" class="img-circle"> <span
                                                         class="profile-status online pull-right"></span> </div>
                                                 <div class="mail-contnet">
@@ -370,12 +370,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                    src="assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                                    src="{{URL::asset('fotoDiri/'.$agen->foto_diri) }}" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right scale-up">
                                 <ul class="dropdown-user">
                                     <li>
                                         <div class="dw-user-box">
-                                            <div class="u-img"><img src="assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-img"><img src="{{URL::asset('fotoDiri/'.$agen->foto_diri) }}" alt="user"></div>
                                             <div class="u-text">
                                                 <h4>{{$agen->nama_lengkap}}</h4>
                                                 <p class="text-muted">{{$agen->email}}</p><a href="pages-profile.html"
@@ -427,7 +427,7 @@
                 <!-- User profile -->
                 <div class="user-profile">
                     <!-- User profile image -->
-                    <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user" />
+                    <div class="profile-img"> <img src="{{URL::asset('fotoDiri/'.$agen->foto_diri) }}" alt="user" />
                         <!-- this is blinking heartbit-->
                         <div class="notify setpos"> <span class="heartbit"></span> <span class="point"></span> </div>
                     </div>

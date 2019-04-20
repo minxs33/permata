@@ -696,8 +696,7 @@
     </div>
 </div>
 @else
-    <h1> section untuk punya akun </h1>
-    </div>
+   
 @endguest
 </section>
 

@@ -2,9 +2,8 @@
 <html>
 <head>
     <!-- Meta-Information -->
-    <title>Permata</title>
+    <title>Permataku</title>
 
-    <link rel="images/logo/logo.png" rel="icon" />
     <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/permata.png">
     
     <meta charset="utf-8">
