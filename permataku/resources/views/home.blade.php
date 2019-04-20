@@ -535,7 +535,7 @@
             <div class="tlt-txt text-center">
                 <div class="tlt-txt-innr">
                     <h2>Mengapa <i class="blue-clr">Kami Hadir</i></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur ili adipiscing Donec nec eros</p>
+                    <p>Permataku hadir untuk membantu memudahkan dalam melakukan transaksi di daerah pedesaan </p>
                 </div>
             </div>
             <div class="app-scrn-wrp">
@@ -543,33 +543,23 @@
                     <div class="app-itm">
                         <div class="fea-bx brd-rd5 text-center">
                             <i><img src="images/resource/fea-icn1.png" alt="" /></i>
-                            <h4>Transparan</h4>
-                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat
-                                Maecenas cenasgue ut eget secte pellentesque…</p>
+                            <h4>Transparansi</h4>
+                            <p>keterbukaan dalam melakukan pendaftaran Tidak ada beban biaya dan prosedur tersembunyi.
+                             Anda pun berupa keterbukaan informasi dan komunikasi</p>
                         </div>
                     </div>
                     <div class="app-itm">
                         <div class="fea-bx brd-rd5 text-center">
                             <i><img src="images/resource/fea-icn2.png" alt="" /></i>
                             <h4>Cepat</h4>
-                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat
-                                Maecenas cenasgue ut eget secte pellentesque…</p>
+                            <p>Pelayanan yang cepat dan mudah menjadi keunggulan dari Permataku</p>
                         </div>
                     </div>
                     <div class="app-itm">
                         <div class="fea-bx brd-rd5 text-center">
                             <i><img src="images/resource/fea-icn3.png" alt="" /></i>
                             <h4>Praktis</h4>
-                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat
-                                Maecenas cenasgue ut eget secte pellentesque…</p>
-                        </div>
-                    </div>
-                    <div class="app-itm">
-                    <div class="fea-bx brd-rd5 text-center">
-                            <i><img src="images/resource/fea-icn3.png" alt="" /></i>
-                            <h4>Praktis</h4>
-                            <p>Lorem ipsum dolor uIL sit amet, consecte pellentesque et nonLIEM erat
-                                Maecenas cenasgue ut eget secte pellentesque…</p>
+                            <p>Syarat atau prosedur yang mudah dan tidak bertele-tele </p>
                         </div>
                     </div>
                 </div>
@@ -646,9 +636,9 @@
                                         <div class="fea-bx2">
                                             <i class="ion-laptop blue-clr"></i>
                                             <div class="fea-innr">
-                                                <h5>HIGH RESOLUTION</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing
-                                                    elit, sed do eiusmod temporara incidid labore.</p>
+                                                <h5>Jarak</h5>
+                                                <p>Sulitnya pembayaran dan transfer di daerah pedesaan
+                                                dikarenakan harus menempuh jarak yang jauh jika ingin transfer atau transaksi lainnya.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -656,9 +646,9 @@
                                         <div class="fea-bx2">
                                             <i class="ion-settings blue-clr"></i>
                                             <div class="fea-innr">
-                                                <h5>ULTIMITED FEATURES</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing
-                                                    elit, sed do eiusmod temporara incidid labore.</p>
+                                                <h5>Rekening</h5>
+                                                <p>Karena di daerah pedesaan jarang yang mempunyai rekening maka kami dapat membantu mereka melakukan transaksi 
+                                                tanpa rekening.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -666,9 +656,8 @@
                                         <div class="fea-bx2">
                                             <i class="ion-person-stalker blue-clr"></i>
                                             <div class="fea-innr">
-                                                <h5>FREE SUPPORT</h5>
-                                                <p>Lorem ipsum dolor sit amet, consectet adop adipisicing
-                                                    elit, sed do eiusmod temporara incidid labore.</p>
+                                                <h5>Biaya Administrasi</h5>
+                                                <p>Biaya Admin di permataku yang cukup terjangkau</p>
                                             </div>
                                         </div>
                                     </div>
