@@ -28,6 +28,7 @@ class AgenController extends Controller
             'ttl' => 'required',
             'alamat' => 'required',
             'pekerjaan' => 'required',
+            'foto_diri.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'foto_ktp.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'no_rekening' => 'required',
             'pin_rekening' => 'required',
@@ -44,6 +45,15 @@ class AgenController extends Controller
         
             $insert1->id_user = Auth::user()->id_user;
             $insert1->nama_lengkap = $request->nama_lengkap;
+            if($request->hasfile('foto_diri')){
+
+                $foto_diri = $request->foto_diri;
+                $filename = time() . '.' . $foto_diri->getClientOriginalExtension();
+                request()->foto_diri->move(public_path('fotodiri'), $filename);
+                $insert1->foto_diri = $filename;
+            }else{
+                $insert1->foto_diri = 'tidak ada';
+            }            
             $insert1->nik = $request->nik;
             $insert1->jenis_kelamin = $request->jenis_kelamin;
             $insert1->ttl = $request->ttl;
@@ -63,16 +73,20 @@ class AgenController extends Controller
         $insert1->no_rekening = $request->no_rekening;
         $insert1->pin_rekening = $request->pin_rekening;
         $insert1->save();
-        return redirect('agen/daftarsukses')->with(['success'=>'Permintaan kamu sedang di proses']);
+        return redirect('/daftarsukses')->with(['success'=>'Permintaan kamu sedang di proses']);
         }
     }
     public function transaksiPage()
     {
-        $pelanggan = Pelanggan::where('id_agen',Auth()->user()->id_agen);
+        $pelanggan = Pelanggan::where('id_agen',Auth()->user()->id_user)->get();
         $agen = Agen::where('id_agen',Auth()->user()->id_user)->first();
         return view('agen/dashboard/transaksi',[
             'pelanggan' => $pelanggan,
             'agen' => $agen,
         ]);
+    }
+    public function getID($id)
+    {
+        $pelanggan = Pelanggan::find($id)->first();
     }
 }

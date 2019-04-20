@@ -18,6 +18,8 @@ class CreateTransaksisTable extends Migration
 
             $table->increments('id_transaksi');
             $table->foreign('id_pelanggan')->references('id_pelanggan')->on('pelanggans');
+            $table->string('nominal',10);
+            $table->string('kode_pulsa',21);
             $table->string('before_transaction',30);
             $table->string('after_transaction',30);
             $table->timestamps();

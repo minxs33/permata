@@ -12,12 +12,37 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Transaksi Listrik </h4><br>
-                            <div class="dt-buttons">
-                                <a class="dt-button buttons-copy buttons-html5" tabindex="0" aria-controls="example23" href="#">
-                                    <span>Excel</span></a><a class="dt-button buttons-pdf buttons-html5" tabindex="0" aria-controls="example23" href="#">
-                                    <span>PDF</span></a><a class="dt-button buttons-print" tabindex="0" aria-controls="example23" href="#">
-                                    <span>Print</span></a>
-                            </div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                            Pelanggan Baru
+                            </button>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Data Pelanggan</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <form>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput">Example label</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput2">Another label</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                    </div>
+                                    </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
                             <div id="example23_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example23"></label>
                             </div>
                             <br><br>

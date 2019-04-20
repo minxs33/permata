@@ -10,4 +10,10 @@ class Transaksi extends Model
     {
         return $this->belongsTo('App\Transaksi');
     }
+    protected $table = 'transaksis';
+    protected $fillable = [
+        'before_transaction','after_transaction',
+    ];
+
+    protected $primaryKey = "id_transaksi";
 }
