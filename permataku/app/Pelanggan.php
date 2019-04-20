@@ -17,4 +17,9 @@ class Pelanggan extends Model
     {
         return $this->belongsTo('App\Pelanggan');
     }
+    
+    public function Transaksi()
+    {
+        return $this->hasMany('App\Transaksi');
+    }
 }
